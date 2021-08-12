@@ -7,7 +7,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/Untitled-2.png" type="image/icon type">
+		<link rel="icon" href="images/meltingCube.png" type="image/icon type">
 	</head>
 	<body class="is-preload">
 
@@ -17,7 +17,7 @@
 				<!-- Intro -->
 					<section class="intro">
 						<header>
-							<h1>HEY! RUBIK'S CUBE LEARNER</h1>
+							<h1>HEY! CUBE LEARNERS</h1>
 							<p>I'm Puzzler Ashkam. In this workshop we improve our <strong>memory, patience, reflexes & concentration. </strong></p>
 							<ul class="actions">
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
@@ -84,8 +84,6 @@
 									<div class="content">
 										<div class="gallery">
 											<a href="images/Speedcubing.jpg" class="landscape"><img src="images/Speedcubing.jpg" alt="" /></a>
-											<!-- <a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt="" /></a> -->
 										</div>
 									</div>
 								</section>
@@ -98,8 +96,6 @@
 									<div class="content">
 										<div class="gallery">
 											<a href="images/rubiks-cube-blindfolded.jpg" class="landscape"><img src="images/rubiks-cube-blindfolded.jpg" alt="" /></a>
-											<!-- <a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt="" /></a> -->
 										</div>
 									</div>
 								</section>
@@ -109,13 +105,13 @@
 								<section>
 									<header>
 										<h3>More Puzzles</h3>
-										<p>2x2, 4x4, Pyraminx, Square 1, Rubik's Clock etc.</p>
+										<p>2x2, 4x4, Pyraminx, Square 1, 3x3 Mirror Cube, Rubik's Clock, etc.</p>
 									</header>
 									<div class="content">
 										<div class="gallery">
-											<a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/pexels-photo-437345.jpeg" /></a>
-											<a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/photo-1539541289005-22e0a5449aee.jfif" alt="" /></a>
-											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/5.jpg" alt="" /></a>
+											<a href="images/pexels-photo-437345.jpeg" class="portrait"><img src="images/pexels-photo-437345.jpeg" /></a>
+											<a href="images/photo-1539541289005-22e0a5449aee.jfif" class="portrait"><img src="images/photo-1539541289005-22e0a5449aee.jfif" alt="" /></a>
+											<a href="images/5.jpg" class="landscape"><img src="images/5.jpg" alt="" /></a>
 										</div>
 									</div>
 								</section>
@@ -123,19 +119,7 @@
 						</div>
 					</section>
 
-				<!-- Section -->
-					<!-- <section>
-						<header>
-							<h2>Duis sed adpiscing veroeros amet</h2>
-						</header>
-						<div class="content">
-							<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
-							<ul class="actions">
-								<li><a href="#" class="button primary large">Get Started</a></li>
-								<li><a href="#" class="button large">Learn More</a></li>
-							</ul>
-						</div>
-					</section> -->
+					<!-- Contact form -->
 
 					<section>
 						<header>
@@ -143,24 +127,21 @@
 						</header>
 						<div class="content">
 							<p><strong>DEMO FOR 3X3 AVAILABLE</strong> </p>
-							<form method="post" action="https://formsubmit.co/879bc366df19f57a2814a337f5b4bf2c">
-								<input type="text" name="_honey" style="display:none;">
-								<input type="hidden" name="_captcha" value="false">
-							<!-- <input type="email" name="email"> -->
+							<form method="POST" action="send" enctype="multipart/form-data">
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
-										<input type="text" name="Name" id="demo-name" value="" placeholder="Puzzler Ashkam" />
+										<input type="text" name="Name" id="demo-name" value="" placeholder="Puzzler Ashkam" required />
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="demo-email" value="" placeholder="puzzler@xyz.com" />
+										<input type="email" name="email" id="demo-email" value="" placeholder="puzzler@xyz.com" required />
 									</div>
 									<div class="field half">
-										<label for="name">PHONE NUMBER</label>
-										<input type="number" name="number" id="demo-name" value="" placeholder="8839694312" />
+										<label for="number">PHONE NUMBER</label>
+										<input type="tel" name="number" id="demo-phone" value="" placeholder="8839694312" />
 									</div>
-									<div class="field">
+									<div class="field half">
 										<label for="category">Category</label>
 										<select name="category" id="demo-category">
 											<option value="">Select Your Course</option>
@@ -172,7 +153,7 @@
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+										<textarea name="message" id="demo-message" placeholder="Enter your message" rows="6" required></textarea>
 									</div>
 								</div>
 								<ul class="actions">
@@ -201,9 +182,7 @@
 										<li><a href="https://twitter.com/Ashkam999" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="https://www.facebook.com/Puzzler-102420832050323/?ref=pages_you_manage" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 										<li><a href="https://www.instagram.com/puzzler_in/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<!-- <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
 										<li><a href="https://github.com/ashkam58" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<!-- <li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li> -->
 									</ul>
 								</li>
 							</ul>
@@ -222,6 +201,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/contact.js"></script>
 
 	</body>
 </html>
